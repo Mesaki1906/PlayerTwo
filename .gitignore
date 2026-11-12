@@ -2,3 +2,10 @@
 __pycache__/
 *.pyc
 .env
+# Old virtual environment
+.venv-old/
+
+# PyInstaller
+build/
+dist/
+*.spec
