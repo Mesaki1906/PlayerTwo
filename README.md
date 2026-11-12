@@ -15,7 +15,7 @@ Project includes bob.py, train.py, test.py, main.py
 
 All of the DQN models from 1 to 5 have also been given, you can change the by changing the "model = DQN.load("bob_dqnXXX")" from bob_dqn_XXX to the version you want to see
 
-Made by Mesaki1906 for Hack Club's PlayerTwo event and this whole project was made in about 5-6 hours with research included.
+Made by Mesaki1906 for Hack Club's PlayerTwo event.
 
 ## Screenshot
 ![Pong gameplay](pong.png)
