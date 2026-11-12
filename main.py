@@ -1,6 +1,8 @@
 import pygame
 import numpy as np
 from stable_baselines3 import DQN
+import sys
+from pathlib import Path
 pygame.init()
 
 width = 480
@@ -42,7 +44,11 @@ running = True
 
 clock = pygame.time.Clock()
 
-model = DQN.load("bob_dqn_v5")
+if getattr(sys, "frozen", False):
+    project_dir = Path(sys.executable).parent
+else:
+    project_dir = Path(__file__).resolve().parent
+model = DQN.load(str(project_dir / "bob_dqn_v5"))
 
 while running:
     screen.fill((10, 10, 25))
